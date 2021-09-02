@@ -7,7 +7,6 @@ import {
   NavLink,
   Router,
 } from "react-router-dom";
-import Test from "./components/test";
 import Hero from "./components/Hero/hero.js";
 import Home from "./pages/home.js";
 

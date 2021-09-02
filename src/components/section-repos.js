@@ -1,5 +1,6 @@
 import React from "react";
 import Repo from "./Repo-Row/repo";
+import Pagination from "./pagination/pagination";
 import "./section-repos.css";
 
 const Repos = () => {
@@ -17,6 +18,9 @@ const Repos = () => {
           <Repo major="1" />
           <Repo />
           <Repo major="1" />
+        </div>
+        <div>
+          <Pagination />
         </div>
       </div>
     </section>

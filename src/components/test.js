@@ -6,7 +6,7 @@ const Test = () => {
     async function getRepos() {
       const data = await axios
         .get(
-          "https://api.github.com/search/repositories?q=created:>2017-10-22&sort=stars&order=desc&page=2"
+          "https://api.github.com/search/repositories?q=created:>2017-10-22&sort=stars&order=desc&page=34"
         )
         .then((response) => {
           console.log(response.data);

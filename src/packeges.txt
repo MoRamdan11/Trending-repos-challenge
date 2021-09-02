@@ -1,3 +1,5 @@
 Installed packages:
 1- React-Router-Dom
 2- AXIOS
+3- Redux
+4- React-Redux

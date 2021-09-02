@@ -1,0 +1,22 @@
+.repo-box {
+  /*Special-Grid*/
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 2rem;
+}
+
+.repo-img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.repo-name {
+  font-size: 3.6rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+.repo-description {
+  font-size: 2rem;
+  line-height: 1.6;
+}

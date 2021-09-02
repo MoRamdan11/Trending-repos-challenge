@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #343a40;
+}
+
+/***********************/
+/*RESUABLE STYLES*/
+/**********************/
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid--2cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.container {
+  width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.heading-primay {
+  font-size: 5.2rem;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block; /*Applying box model to <a> tag*/
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: 500;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  background-color: #115c68;
+  color: #fff;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #0e4a53;
+}
+
+/* .container {
+  padding: 9.6rem 0;
+} */
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+h1-size: 5.2rem
+p-size: 2rem
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+- Letter spacing
+-0.5px
+0.75px
+
+--- 02 COLORS
+- primary: #339af0
+-Tints:#d6ebfc
+-Shades:
+#115c68
+-Accents:
+-Greys: 
+#343a40
+
+*/

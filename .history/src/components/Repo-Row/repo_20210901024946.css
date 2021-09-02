@@ -1,0 +1,11 @@
+.repo-box {
+  /*Special-Grid*/
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 1.6rem;
+}
+
+.repo-img {
+  width: 100%;
+  border-radius: 50%;
+}

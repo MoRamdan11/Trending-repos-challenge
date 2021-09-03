@@ -114,3 +114,47 @@ Paragraph default: 1.6
 #343a40
 
 */
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  /* .heading-primay {
+    font-size: 4.4rem;
+  }
+  .heading-secondary {
+    font-size: 3.6rem;
+  } */
+}
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .heading-primay {
+    font-size: 4.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  html {
+    font-size: 43.75%;
+  }
+  .heading-primay {
+    font-size: 3.6rem;
+  }
+  .heading-secondary {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+}

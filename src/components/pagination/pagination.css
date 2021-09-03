@@ -5,7 +5,8 @@
 }
 
 .pagination {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
   align-items: center;
   gap: 2rem;
 }
@@ -66,4 +67,18 @@
 .active-page {
   background-color: #115c68;
   color: #fff;
+}
+
+.pagination p:first-child {
+  font-size: 2.4rem;
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .pagination {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }

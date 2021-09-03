@@ -7,6 +7,7 @@ import { connect } from "react-redux";
 
 const Repos = ({ currentPage }) => {
   const [reposData, setReposData] = useState([]);
+  const [endRepo, setEndRepo] = useState(10);
   useEffect(() => {
     axios
       .get(
@@ -14,6 +15,7 @@ const Repos = ({ currentPage }) => {
       )
       .then((response) => {
         setReposData([]);
+        setEndRepo(10);
         setReposData(response.data.items);
         setTimeout(300, () => {
           console.log("eee", reposData);
@@ -22,6 +24,10 @@ const Repos = ({ currentPage }) => {
         // console.log(response.data);
       });
   }, [currentPage]);
+
+  const handlemoreClick = () => {
+    setEndRepo(endRepo + 10);
+  };
   return (
     <section className="section-repos">
       <div className="container">
@@ -32,7 +38,7 @@ const Repos = ({ currentPage }) => {
           </h2>
         </header>
         <div>
-          {reposData.map((repo) => {
+          {reposData.slice(0, endRepo).map((repo) => {
             return (
               <Repo
                 key={repo.id}
@@ -45,6 +51,13 @@ const Repos = ({ currentPage }) => {
               />
             );
           })}
+          {endRepo < reposData.length && (
+            <div className="more-box">
+              <button onClick={handlemoreClick} className="more-btn">
+                View more repos
+              </button>
+            </div>
+          )}
           <Pagination />
         </div>
       </div>

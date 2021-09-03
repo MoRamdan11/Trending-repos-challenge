@@ -8,8 +8,8 @@ const Hero = () => {
         <div>
           <h1 className="heading-primay">Don't waste time with poor repos</h1>
           <p className="hero-text">
-            Top trending Github-repos are here. Check repos details (name,
-            descrption, owner-name ...etc).
+            Top trending Github-repos are here. View the best-repos and Check
+            repos details (name, descrption, owner-name ...etc).
           </p>
           <a href="#" className="btn">
             View repos &rarr;

@@ -13,6 +13,7 @@
 .hero-text {
   font-size: 2rem;
   line-height: 1.6;
+  font-weight: 400;
   margin-bottom: 4.8rem;
 }
 
@@ -50,4 +51,47 @@
 .users-text span {
   font-weight: 700;
   color: #0e4a53;
+}
+
+/*MEDIA-QUERIES*/
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+  .hero-container {
+    max-width: 120rem;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets)  */
+/**************************/
+
+@media (max-width: 59em) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 70%;
+  }
+
+  .users-container {
+    justify-content: center;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .user-imgs img {
+    width: 3.6rem;
+    height: 3.6rem;
+    margin-right: -1.2rem;
+  }
 }

@@ -41,8 +41,10 @@
 }
 
 .repo-secondary-info {
-  display: flex;
-  gap: 1.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  column-gap: 1.2rem;
+  row-gap: 2.4rem;
   align-items: center;
 }
 
@@ -66,4 +68,37 @@
 
 .repo-submit {
   font-size: 1.6rem;
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .repo-box {
+    padding: 3.2rem 1.6rem;
+  }
+  .repo-secondary-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .repo-submit {
+    grid-column: 1 / -1;
+  }
+}
+
+/**************************/
+/* BELOW 400px (medium Phones and small phones) */
+/**************************/
+
+@media (max-width: 25em) {
+  .repo-img {
+    grid-column: 1 / -1;
+  }
+  .repo-info-box {
+    grid-column: 1 / -1;
+  }
+  .repo-img {
+    width: 60%;
+    margin-bottom: 2rem;
+  }
 }

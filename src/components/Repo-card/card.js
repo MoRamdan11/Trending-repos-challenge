@@ -1,5 +1,5 @@
 import React from "react";
-import "./repo.css";
+import "./card.css";
 const Repo = ({ name, description, stars, issues, avatar, ownerName }) => {
   return (
     <div className="repo-box">

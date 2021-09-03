@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
-import Navbar from "../components/Navbar/navbar";
+import Navigation from "../components/Navigation/Navigation";
 import Hero from "../components/Hero/hero";
-import Repos from "../components/section-repos";
+import Repos from "../components/Repos/repos";
 //
-import Test from "../components/test";
 import Pagination from "../components/pagination/pagination";
 const Home = () => {
   useEffect(() => {
@@ -11,11 +10,12 @@ const Home = () => {
     console.log("date", date);
   }, []);
   return (
-    <header>
-      <Navbar />
+    <div>
+      <Navigation />
       <Hero />
       <Repos />
-    </header>
+      <Pagination />
+    </div>
   );
 };
 

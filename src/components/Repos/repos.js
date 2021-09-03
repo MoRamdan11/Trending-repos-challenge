@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Repo from "./Repo-Row/repo";
-import Pagination from "./pagination/pagination";
-import "./section-repos.css";
+import RepoCard from "../Repo-card/card";
+import Pagination from "../pagination/pagination";
+import "./repos.css";
 import axios from "axios";
 import { connect } from "react-redux";
 
@@ -27,9 +27,10 @@ const Repos = ({ currentPage }) => {
 
   const handlemoreClick = () => {
     setEndRepo(endRepo + 10);
+    // window.scrollTo()
   };
   return (
-    <section className="section-repos">
+    <section className="section-repos" id="repos">
       <div className="container">
         <header>
           <p className="subheading">Repos</p>
@@ -40,7 +41,7 @@ const Repos = ({ currentPage }) => {
         <div>
           {reposData.slice(0, endRepo).map((repo) => {
             return (
-              <Repo
+              <RepoCard
                 key={repo.id}
                 name={repo.name}
                 description={repo.description}
@@ -58,7 +59,6 @@ const Repos = ({ currentPage }) => {
               </button>
             </div>
           )}
-          <Pagination />
         </div>
       </div>
     </section>

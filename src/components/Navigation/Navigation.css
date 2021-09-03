@@ -3,8 +3,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: rgba(255, 255, 255, 0.97);
-  box-shadow: 0 1.2rem 3.2rem rgb(0 0 0 / 3%); */
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 1.2rem 3.2rem rgb(0 0 0 / 3%);
+  z-index: 9999;
+}
+
+.logo-link {
+  cursor: pointer;
+  text-decoration: none;
+  color: #343a40;
 }
 
 .nav-title {
@@ -71,8 +80,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    /* transform: translateX(100%); */
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
   }
-
+  .open-nav .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
   .nav-list {
     flex-direction: column;
   }
@@ -85,17 +104,20 @@
     display: block;
     border: none;
     background: none;
+    z-index: 999;
   }
   .mobile-btn ion-icon {
-    height: 4rem;
-    width: 4rem;
+    height: 4.8rem;
+    width: 4.8rem;
+  }
+
+  .mobile-btn ion-icon[name="close-outline"] {
+    display: none;
+  }
+  .open-nav .mobile-btn ion-icon[name="close-outline"] {
+    display: block;
+  }
+  .open-nav .mobile-btn ion-icon[name="menu-outline"] {
+    display: none;
   }
 }
-
-/*
-- Font sizes (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-- Spacing system (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-*/

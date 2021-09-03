@@ -11,8 +11,8 @@ const Hero = () => {
             Top trending Github-repos are here. View the best-repos and Check
             repos details (name, descrption, owner-name ...etc).
           </p>
-          <a href="#" className="btn">
-            View repos &rarr;
+          <a href="#repos" className="btn">
+            View repos &darr;
           </a>
           <div className="users-container">
             <div className="user-imgs">

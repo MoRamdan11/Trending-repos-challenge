@@ -27,6 +27,7 @@ const Pagination = ({ pagesNumbers, currentPage, dispatch }) => {
   };
 
   const handleNextPageClick = () => {
+    document.getElementById("repos").scrollIntoView({ behavior: "smooth" });
     dispatch(changePageUp());
     if (currentPage === pagesNumbers[pagesNumbers.length - 1]) {
       dispatch(changePaginationUp(currentPage));
@@ -34,6 +35,7 @@ const Pagination = ({ pagesNumbers, currentPage, dispatch }) => {
   };
 
   const handleBelowPageClick = () => {
+    document.getElementById("repos").scrollIntoView();
     dispatch(changePageDown());
     if (currentPage === pagesNumbers[0]) {
       dispatch(changePaginationDown(currentPage));
@@ -41,11 +43,10 @@ const Pagination = ({ pagesNumbers, currentPage, dispatch }) => {
   };
 
   return (
-    <div className="pagination-container">
+    <div className="pagination-container" id="pagination">
       <div className="pagination">
         <button
           onClick={handleBelowPageClick}
-          className="pagination-btn left-btn"
           className={currentPage === 1 ? "disabled-btn" : "pagination-btn"}
           disabled={currentPage === 1}
         >

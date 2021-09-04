@@ -5,10 +5,6 @@ import Repos from "../components/Repos/repos";
 //
 import Pagination from "../components/pagination/pagination";
 const Home = () => {
-  useEffect(() => {
-    const date = new Date();
-    console.log("date", date);
-  }, []);
   return (
     <div>
       <Navigation />

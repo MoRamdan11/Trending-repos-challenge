@@ -1,6 +1,16 @@
+import moment from "moment";
 import React from "react";
 import "./card.css";
-const Repo = ({ name, description, stars, issues, avatar, ownerName }) => {
+const Repo = ({
+  name,
+  description,
+  stars,
+  issues,
+  avatar,
+  ownerName,
+  createdAt,
+}) => {
+  const duration = moment(createdAt).fromNow();
   return (
     <div className="repo-box">
       <img src={avatar} alt="repo-owner-img" className="repo-img" />
@@ -16,7 +26,9 @@ const Repo = ({ name, description, stars, issues, avatar, ownerName }) => {
             <ion-icon name="bug-outline"></ion-icon>
             <p>{issues} Issues</p>
           </div>
-          <p className="repo-submit">Submitted 30 days ago by {ownerName}</p>
+          <p className="repo-submit">
+            Submitted {duration} by <span>{ownerName}</span>
+          </p>
         </aside>
       </div>
     </div>

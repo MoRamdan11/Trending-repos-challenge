@@ -17,11 +17,6 @@ const Repos = ({ currentPage }) => {
         setReposData([]);
         setEndRepo(10);
         setReposData(response.data.items);
-        setTimeout(300, () => {
-          console.log("eee", reposData);
-        });
-        console.log("eee", reposData);
-        // console.log(response.data);
       });
   }, [currentPage]);
 
@@ -49,6 +44,7 @@ const Repos = ({ currentPage }) => {
                 issues={repo.open_issues_count}
                 avatar={repo.owner.avatar_url}
                 ownerName={repo.owner.login}
+                createdAt={repo.created_at}
               />
             );
           })}

@@ -5,9 +5,11 @@
 }
 
 .pagination {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  /* display: grid;
+  grid-template-columns: repeat(10, 1fr); */
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -79,6 +81,7 @@
 
 @media (max-width: 34em) {
   .pagination {
+    display: grid;
     grid-template-columns: repeat(5, 1fr);
   }
 }

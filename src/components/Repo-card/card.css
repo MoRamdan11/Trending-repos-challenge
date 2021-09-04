@@ -51,9 +51,9 @@
 .repo-stars,
 .repo-issues {
   font-size: 1.6rem;
-  padding: 0.8rem 1.6rem;
+  /* padding: 0.8rem 1.6rem; */
   border-radius: 9px;
-  border: 1px solid #d6ebfc;
+  /* border: 1px solid #d6ebfc; */
   display: flex;
   align-items: center;
   gap: 1.2rem;
@@ -68,6 +68,13 @@
 
 .repo-submit {
   font-size: 1.6rem;
+}
+
+.repo-submit span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #115c68;
+  align-self: center;
 }
 
 /**************************/

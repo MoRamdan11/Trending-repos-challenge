@@ -14,9 +14,9 @@ import "./pagination.css";
 
 const Pagination = ({ pagesNumbers, currentPage, dispatch }) => {
   const handlePageChange = (e) => {
+    document.getElementById("repos").scrollIntoView({ behavior: "smooth" });
     const val = parseInt(e.target.value);
     dispatch(changePage(val));
-    console.log(val);
     if (val === 1 || val === 34) {
       dispatch(resetPagination());
     } else if (val === pagesNumbers[pagesNumbers.length - 1]) {

@@ -5,8 +5,9 @@ It's a small webApp that list the most starred Github repos that were created in
 * Number of stars for the repo.
 * Number of issues for the repo.
 * Username and avatar of the owner
+our web-app is Responsive for all devices (Desktop, Landscape tablets, small tablets and Mobiles).
 
-## Tools 
+## Libraries 
 * React.js:<br/>
 It’s a a JavaScript library. React is fast, scalable, flexible, powerful, and has a robust developer community that’s rapidly growing.<br/>
 React.js uses virtual DOM which re-renders only the updated part not the whole page.

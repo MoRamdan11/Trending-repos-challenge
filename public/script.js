@@ -14,8 +14,3 @@ links.forEach((link) => {
     }
   });
 });
-
-// window.addEventListener("scroll", () => {
-//   var header = document.querySelector("main-header");
-//   header.classList.toggle("sticky", window.screenY > 0);
-// });

@@ -1,9 +1,9 @@
-# Trending-repos-challenge
+# Trendy-repos-challenge
 It's a small webApp that list the most starred GitHub repos that were created in the last 30 days and view these repos details(Repository name, description, Number of stars for the repo, Number of issues for the repo and Username and image of the owner) <br />
-our web-app is Responsive for all devices (Desktop, Landscape tablets, small tablets and Mobiles).
+It's is Responsive for all devices (Desktop, Landscape tablets, small tablets and Mobiles).
 
 ## Demo
-YouTube Demo link: https://youtu.be/gKByt2iC0MQ
+YouTube Demo link: https://www.youtube.com/watch?v=3sGY6UHLQfA
 
 ## Libraries 
 * React.js:<br/>
